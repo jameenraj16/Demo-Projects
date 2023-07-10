@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600&display=swap');
+
+:root{
+    --border-color:#2790e6;
+    --fill-color: #c3cfff;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(228, 69%, 69%);
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1{
+    margin: 10px 0 0;
+    color: #fff;
+}
+
+h3{
+    font-weight: 400;
+    margin: 10 0;
+    color: #fff;
+}
+
+.cup{
+    background-color: #fff;
+    border: 2px solid var(--border-color);
+    color: var(--border-color);
+    border-radius: 0 0 25px 25px;
+    height: 202px;
+    width: 100px;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 300px;
+}
+
+.cup.cup-small{
+    height: 80px;
+    width: 40px;
+    border-radius: 0 0 12px 12px;
+    background-color: rgba(255, 255, 255, 0.9);
+    cursor: pointer;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s ease;
+}
+
+.cup.cup-small.full{
+    background-color: var(--fill-color);
+    color: #fff;
+
+}
+
+.cups{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 200px;
+}
+
+.remained{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    flex: 1;
+    transition: 0.3s ease;
+}
+
+.remained span{
+    font-size: 0.6rem;
+    font-weight: bold;
+
+
+}
+.remained small{
+    font-size: .5rem;
+}
+
+.percentage{
+    background-color: var(--fill-color);
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 0;
+    transition: 0.3s ease;
+}
+
+.text{
+    text-align: center;
+    margin: 0 0 5px;
+    color: #fff;
+}
